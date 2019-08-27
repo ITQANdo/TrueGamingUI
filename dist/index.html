@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>True-Gaming</title>
+</head>
+
+<body class="font-araby-regular bg-sectiongray">
+    <!-- Navbar Section Begin -->
+    <nav class="navbar-section bg-navbg h-12 absolute left-0 right-0" style="top: 20px;z-index: 9;">
+        <div class="container mx-auto flex items-center justify-between flex-wrap">
+            <div class="flex items-center flex-shrink-0 text-white ml-6">
+                <img src="https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod/img/tg_logo_big.png"
+                    class="h-10" alt="">
+            </div>
+            <div class="block lg:hidden">
+                <button
+                    class="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <ul class="lg:flex-grow flex">
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            أخبار
+                        </a>
+                    </li>
+                    <li style="position: relative" class="menu-element">
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            مراجعات
+                        </a>
+                        <ul class="submenu-element absolute text-white bg-red-600 p-6 text-lg flex flex-wrap w-64 justify-between items-center"
+                            style="top: 3rem; right: 0; left: auto;">
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            فيديو
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            تقارير
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            منتديات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            مواعيد الإصدار
+                        </a>
+                    </li>
+                </ul>
+                <div class="relative text-white ml-4">
+                    <input type="search" name="serch" placeholder="ابحث في الموقع"
+                        class="bg-transparent h-8 px-5 pr-10 rounded-full text-lg focus:outline-none font-araby-bold">
+                    <button type="submit" class="absolute right-0 top-0 mt-3 mr-4 text-red-600">
+                        <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                            xml:space="preserve" width="512px" height="512px">
+                            <path
+                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="social-media-section text-gray-700">
+
+                    <a href="#" class=""><i class="fab fa-facebook-f bg-gray-300 rounded-full p-2"></i></a>
+                    <a href="#" class=""><i class="fab fa-twitter bg-gray-300 rounded-full p-2"></i></a>
+                    <a href="#" class=""><i class="fab fa-youtube bg-gray-300 rounded-full p-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+    <!-- Slider Section Begin -->
+    <div class="siema">
+        <div class="slider-section h-siema w-full bg-no-repeat bg-cover bg-center"
+            style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url( https://www.true-gaming.net/home/wp-content/uploads/2019/08/0.jpeg )">
+            <div class="container mx-auto">
+                <center>
+                    <div
+                        class="mb-3 mt-24 tag bg-red-600 text-white inline-block px-6 py-1 rounded-t-full rounded-l-full mx-auto">
+                        مراجعة</div>
+                    <div class="text-white text-5xl font-araby-bold mb-3">حصري: Michael Pachter يتوقع أن تتجاوز ننتندو
+                        أهدافها التجارية هذا العام مع إطلاق Switch Lite</div>
+
+                    <div class="text-gray-300 text-2xl font-araby-bold mb-3">هل تستطيع أن تفرض سيطرتك؟</div>
+                    <div class="post-info-items">
+                        <div class="post-info-item inline-block ml-4">
+                            <i class="text-gray-500 far fa-clock align-middle text-2xl"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">26 أغسطس 2019</span>
+                        </div>
+                        <div class="post-info-item inline-block ml-4">
+                            <i class="text-gray-500 far fa-comment align-middle text-2xl"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">التعليقات: 288</span>
+                        </div>
+                        <div class="post-info-item inline-block">
+                            <i class="text-gray-500 far fa-eye align-middle text-2xl"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">1893 مشاهدة</span>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="slider-section h-siema w-full bg-no-repeat bg-cover bg-center"
+            style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url( https://www.true-gaming.net/home/wp-content/uploads/2019/08/0.jpeg )">
+            <div class="container mx-auto">
+                <center>
+                    <div
+                        class="mb-3 mt-24 tag bg-red-600 text-white inline-block px-6 py-1 rounded-t-full rounded-l-full mx-auto">
+                        مراجعة</div>
+                    <div class="text-white text-5xl font-araby-bold mb-3">حصري: Michael Pachter يتوقع أن تتجاوز ننتندو
+                        أهدافها التجارية هذا العام مع إطلاق Switch Lite</div>
+
+                    <div class="text-gray-300 text-2xl font-araby-bold mb-3">هل تستطيع أن تفرض سيطرتك؟</div>
+                    <div class="post-info-items">
+                        <div class="post-info-item inline-block ml-4">
+                            <i class="text-gray-500 far fa-clock align-middle text-2xl"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">26 أغسطس 2019</span>
+                        </div>
+                        <div class="post-info-item inline-block ml-4">
+                            <i class="text-gray-500 far fa-comment align-middle text-2xl"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">التعليقات: 288</span>
+                        </div>
+                        <div class="post-info-item inline-block">
+                            <i class="text-gray-500 far fa-eye align-middle text-2xl"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">1893 مشاهدة</span>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Slider Section End -->
+    <!-- Articles Section Begin -->
+    <div class="articles-section container mx-auto block">
+        <div class="flex mt-16">
+            <div class="lg:w-4/6 w-full ml-5">
+                <div class="article-bar-title">
+                    <div class="flex items-center justify-between relative">
+                        <div
+                            class="flex-shrink-0 tag-red bg-red-600 text-white border-2 border-red-600 px-6 py-1 rounded-t-full rounded-l-full">
+                            أحدث الأخبار
+                        </div>
+                        <div class="border-b-2 border-red-600 absolute bottom-0" style="left: 25px; right: 17px;"></div>
+                        <div
+                            class="tag-red flex-shrink-0 bg-transparent text-red-600 border-2 border-red-600 px-6 py-1 rounded-t-full rounded-l-full">
+                            <a href="">عرض الكل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles mt-8">
+                    <div
+                        class="artcile-single max-w-sm w-full lg:max-w-full lg:flex border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400">
+                        <div class="lg:h-auto lg:w-64 flex-none bg-cover bg-center rounded-t lg:rounded-card text-center overflow-hidden"
+                            style="background-image: url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
+                            title="">
+                        </div>
+                        <div
+                            class="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                            <div class="mb-8">
+                                <div class="text-gray-900 font-bold text-xl mb-2">
+
+                                    <h2>
+                                        <a href="#">
+                                            <span class="bg-blue-500 text-base rounded-lg px-2 colorw">مراجعة</span>
+                                            تقرير: مايكروسوفت تعاقدت مع أشخاص من
+                                            أجل الاستماع إلى مُستخدمي Xbox One عن طريق الأوامر الصوتية!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <p class="text-gray-700 text-base">أكّد تقريرٌ جديدٌ على شبكة Vice و بناءً على مصادر
+                                    مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
+                                    الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
+                            </div>
+                            <div class="flex justify-between align">
+                                <div class="post-info-items">
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
+                                    </div>
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
+                                    </div>
+                                    <div class="post-info-item inline-block">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
+                                    </div>
+
+                                </div>
+                                <a href="#"
+                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    أكثر</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="artcile-single max-w-sm w-full lg:max-w-full lg:flex border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400">
+                        <div class="lg:h-auto lg:w-64 flex-none bg-cover bg-center rounded-t lg:rounded-card text-center overflow-hidden"
+                            style="background-image: url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
+                            title="">
+                        </div>
+                        <div
+                            class="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                            <div class="mb-8">
+                                <div class="text-gray-900 font-bold text-xl mb-2">
+
+                                    <h2>
+                                        <a href="#">
+                                            <span class="bg-blue-500 text-base rounded-lg px-2 colorw">مراجعة</span>
+                                            تقرير: مايكروسوفت تعاقدت مع أشخاص من
+                                            أجل الاستماع إلى مُستخدمي Xbox One عن طريق الأوامر الصوتية!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <p class="text-gray-700 text-base">أكّد تقريرٌ جديدٌ على شبكة Vice و بناءً على مصادر
+                                    مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
+                                    الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
+                            </div>
+                            <div class="flex justify-between align">
+                                <div class="post-info-items">
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
+                                    </div>
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
+                                    </div>
+                                    <div class="post-info-item inline-block">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
+                                    </div>
+
+                                </div>
+                                <a href="#"
+                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    أكثر</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="artcile-single max-w-sm w-full lg:max-w-full lg:flex border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400">
+                        <div class="lg:h-auto lg:w-64 flex-none bg-cover bg-center rounded-t lg:rounded-card text-center overflow-hidden"
+                            style="background-image: url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
+                            title="">
+                        </div>
+                        <div
+                            class="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                            <div class="mb-8">
+                                <div class="text-gray-900 font-bold text-xl mb-2">
+
+                                    <h2>
+                                        <a href="#">
+                                            <span class="bg-blue-500 text-base rounded-lg px-2 colorw">مراجعة</span>
+                                            تقرير: مايكروسوفت تعاقدت مع أشخاص من
+                                            أجل الاستماع إلى مُستخدمي Xbox One عن طريق الأوامر الصوتية!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <p class="text-gray-700 text-base">أكّد تقريرٌ جديدٌ على شبكة Vice و بناءً على مصادر
+                                    مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
+                                    الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
+                            </div>
+                            <div class="flex justify-between align">
+                                <div class="post-info-items">
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
+                                    </div>
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
+                                    </div>
+                                    <div class="post-info-item inline-block">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
+                                    </div>
+
+                                </div>
+                                <a href="#"
+                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    أكثر</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="artcile-single max-w-sm w-full lg:max-w-full lg:flex border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400">
+                        <div class="lg:h-auto lg:w-64 flex-none bg-cover bg-center rounded-t lg:rounded-card text-center overflow-hidden"
+                            style="background-image: url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
+                            title="">
+                        </div>
+                        <div
+                            class="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                            <div class="mb-8">
+                                <div class="text-gray-900 font-bold text-xl mb-2">
+
+                                    <h2>
+                                        <a href="#">
+                                            <span class="bg-blue-500 text-base rounded-lg px-2 colorw">مراجعة</span>
+                                            تقرير: مايكروسوفت تعاقدت مع أشخاص من
+                                            أجل الاستماع إلى مُستخدمي Xbox One عن طريق الأوامر الصوتية!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <p class="text-gray-700 text-base">أكّد تقريرٌ جديدٌ على شبكة Vice و بناءً على مصادر
+                                    مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
+                                    الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
+                            </div>
+                            <div class="flex justify-between align">
+                                <div class="post-info-items">
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
+                                    </div>
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
+                                    </div>
+                                    <div class="post-info-item inline-block">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
+                                    </div>
+
+                                </div>
+                                <a href="#"
+                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    أكثر</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="artcile-single max-w-sm w-full lg:max-w-full lg:flex border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400">
+                        <div class="lg:h-auto lg:w-64 flex-none bg-cover bg-center rounded-t lg:rounded-card text-center overflow-hidden"
+                            style="background-image: url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
+                            title="">
+                        </div>
+                        <div
+                            class="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                            <div class="mb-8">
+                                <div class="text-gray-900 font-bold text-xl mb-2">
+
+                                    <h2>
+                                        <a href="#">
+                                            <span class="bg-blue-500 text-base rounded-lg px-2 colorw">مراجعة</span>
+                                            تقرير: مايكروسوفت تعاقدت مع أشخاص من
+                                            أجل الاستماع إلى مُستخدمي Xbox One عن طريق الأوامر الصوتية!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <p class="text-gray-700 text-base">أكّد تقريرٌ جديدٌ على شبكة Vice و بناءً على مصادر
+                                    مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
+                                    الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
+                            </div>
+                            <div class="flex justify-between align">
+                                <div class="post-info-items">
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
+                                    </div>
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
+                                    </div>
+                                    <div class="post-info-item inline-block">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
+                                    </div>
+
+                                </div>
+                                <a href="#"
+                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    أكثر</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="artcile-single max-w-sm w-full lg:max-w-full lg:flex border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400">
+                        <div class="lg:h-auto lg:w-64 flex-none bg-cover bg-center rounded-t lg:rounded-card text-center overflow-hidden"
+                            style="background-image: url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
+                            title="">
+                        </div>
+                        <div
+                            class="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                            <div class="mb-8">
+                                <div class="text-gray-900 font-bold text-xl mb-2">
+
+                                    <h2>
+                                        <a href="#">
+                                            <span class="bg-blue-500 text-base rounded-lg px-2 colorw">مراجعة</span>
+                                            تقرير: مايكروسوفت تعاقدت مع أشخاص من
+                                            أجل الاستماع إلى مُستخدمي Xbox One عن طريق الأوامر الصوتية!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <p class="text-gray-700 text-base">أكّد تقريرٌ جديدٌ على شبكة Vice و بناءً على مصادر
+                                    مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
+                                    الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
+                            </div>
+                            <div class="flex justify-between align">
+                                <div class="post-info-items">
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
+                                    </div>
+                                    <div class="post-info-item inline-block ml-4">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
+                                    </div>
+                                    <div class="post-info-item inline-block">
+                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
+                                    </div>
+
+                                </div>
+                                <a href="#"
+                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    أكثر</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="lg:w-2/6 w-full">
+                <div class="sidebar-widget bg-black bg-no-repeat bg-center bg-cover rounded-lg p-6 text-white"
+                    style="background-image: url('https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod26feb19b/img/sidebar.jpg');">
+                    <div class="sidebar-widget-header flex items-center justify-between mb-6">
+                        <div
+                            class="sidebar-widget-header-right bg-red-600 border-red-600 border-2 rounded-t-full rounded-l-full px-3 py-1">
+                            مدونة الأعضاء</div>
+                        <a href="#"
+                            class="sidebar-widget-header-left bg-transparent border-gray-400 text-gray-400 border-2 rounded-t-full rounded-r-full px-3 py-1">عرض
+                            الكل</a>
+                    </div>
+                    <div class="flex items-center justify-between my-4">
+                        <a href="#" class="w-3/12 h-12 ml-4 bg-no-repeat bg-center bg-cover rounded-card"
+                            style="background-image: url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
+                        </a>
+                        <div class="text-sm">
+                            <a href="#" class="text-white text-lg leading-none">
+                                مراجعة Odin Sphere Lei
+                                مراجعة Odin Sphere Leifthrasir
+                                fthrasir</a>
+                        </div>
+                        <div class="px-4 review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-2xl"
+                            style="line-height: 2.5rem">
+                            6
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between my-4">
+                        <a href="#" class="w-3/12 h-12 ml-4 bg-no-repeat bg-center bg-cover rounded-card"
+                            style="background-image: url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
+                        </a>
+                        <div class="text-sm">
+                            <a href="#" class="text-white text-lg leading-none">
+                                مراجعة Odin Sphere Lei
+                                مراجعة Odin Sphere Leifthrasir
+                                fthrasir</a>
+                        </div>
+                        <div class="px-4 review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-2xl"
+                            style="line-height: 2.5rem">
+                            6
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Articles Section End -->
+
+    <!-- Reviews Section Begin -->
+    <div class="reviews-section bg-sectionwhite">
+        <div class="container mx-auto pt-8">
+            <div class="article-bar-title">
+                <div class="flex items-center justify-between relative">
+                    <div
+                        class="flex-shrink-0 tag-red bg-red-600 text-white border-2 border-red-600 px-6 py-1 rounded-t-full rounded-l-full">
+                        أحدث الأخبار
+                    </div>
+                    <div class="border-b-2 border-red-600 absolute bottom-0" style="left: 25px; right: 17px;"></div>
+                    <div
+                        class="tag-red flex-shrink-0 bg-transparent text-red-600 border-2 border-red-600 px-6 py-1 rounded-t-full rounded-l-full">
+                        <a href="">عرض الكل</a>
+                    </div>
+                </div>
+            </div>
+            <div class="articles pt-4 flex items-center">
+                <div class="w-3/12 max-w-sm overflow-hidden p-4">
+                    <a href="#">
+                        <div class="pt-24 w-full h-64 bg-cover bg-no-repeat bg-center relative rounded-card"
+                            style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), url(https://images-na.ssl-images-amazon.com/images/I/71F%2BX1-dv%2BL._SX342_.jpg)"
+                            alt="">
+                            <div class="w-16 h-16 mx-auto review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-white "
+                                style=" background-image: linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,.5));">
+                                <span style="line-height: 3.4rem;"
+                                    class="text-2xl font-bold w-full block text-center">7.5</span>
+                            </div>
+                            <div class="post-info-items absolute bottom-0 px-8 py-8">
+                                <div class="post-info-item inline-block ml-4">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">28/08/2019</span>
+                                </div>
+                                <div class="post-info-item inline-block ml-4">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">65</span>
+                                </div>
+                                <div class="post-info-item inline-block">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">511</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="py-4">
+                        <div class="font-bold text-xl mb-2 w-full"><a href="#" class="hover:text-red-600">Wreckfest</a>
+                        </div>
+                        <div class="text-xs text-gray-600 w-full">Wreckfest هي لعبة سباقات تركّز على سباقات التحطيم
+                            العنيفة وديربي التحطيم وهي التكملة الروحية لألعاب FlatOut من مطوّريها في Bugbear
+                            Entertainment، اللع…</div>
+                    </div>
+                </div>
+                <div class="w-3/12 max-w-sm overflow-hidden p-4">
+                    <a href="#">
+                        <div class="pt-24 w-full h-64 bg-cover bg-no-repeat bg-center relative rounded-card"
+                            style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), url(https://images-na.ssl-images-amazon.com/images/I/71F%2BX1-dv%2BL._SX342_.jpg)"
+                            alt="">
+                            <div class="w-16 h-16 mx-auto review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-white "
+                                style=" background-image: linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,.5));">
+                                <span style="line-height: 3.4rem;"
+                                    class="text-2xl font-bold w-full block text-center">7.5</span>
+                            </div>
+                            <div class="post-info-items absolute bottom-0 px-8 py-8">
+                                <div class="post-info-item inline-block ml-4">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">28/08/2019</span>
+                                </div>
+                                <div class="post-info-item inline-block ml-4">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">65</span>
+                                </div>
+                                <div class="post-info-item inline-block">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">511</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="py-4">
+                        <div class="font-bold text-xl mb-2 w-full"><a href="#" class="hover:text-red-600">Wreckfest</a>
+                        </div>
+                        <div class="text-xs text-gray-600 w-full">Wreckfest هي لعبة سباقات تركّز على سباقات التحطيم
+                            العنيفة وديربي التحطيم وهي التكملة الروحية لألعاب FlatOut من مطوّريها في Bugbear
+                            Entertainment، اللع…</div>
+                    </div>
+                </div>
+                <div class="w-3/12 max-w-sm overflow-hidden p-4">
+                    <a href="#">
+                        <div class="pt-24 w-full h-64 bg-cover bg-no-repeat bg-center relative rounded-card"
+                            style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), url(https://images-na.ssl-images-amazon.com/images/I/71F%2BX1-dv%2BL._SX342_.jpg)"
+                            alt="">
+                            <div class="w-16 h-16 mx-auto review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-white "
+                                style=" background-image: linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,.5));">
+                                <span style="line-height: 3.4rem;"
+                                    class="text-2xl font-bold w-full block text-center">7.5</span>
+                            </div>
+                            <div class="post-info-items absolute bottom-0 px-8 py-8">
+                                <div class="post-info-item inline-block ml-4">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">28/08/2019</span>
+                                </div>
+                                <div class="post-info-item inline-block ml-4">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">65</span>
+                                </div>
+                                <div class="post-info-item inline-block">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">511</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="py-4">
+                        <div class="font-bold text-xl mb-2 w-full"><a href="#" class="hover:text-red-600">Wreckfest</a>
+                        </div>
+                        <div class="text-xs text-gray-600 w-full">Wreckfest هي لعبة سباقات تركّز على سباقات التحطيم
+                            العنيفة وديربي التحطيم وهي التكملة الروحية لألعاب FlatOut من مطوّريها في Bugbear
+                            Entertainment، اللع…</div>
+                    </div>
+                </div>
+                <div class="w-3/12 max-w-sm overflow-hidden p-4">
+                    <a href="#">
+                        <div class="pt-24 w-full h-64 bg-cover bg-no-repeat bg-center relative rounded-card"
+                            style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), url(https://images-na.ssl-images-amazon.com/images/I/71F%2BX1-dv%2BL._SX342_.jpg)"
+                            alt="">
+                            <div class="w-16 h-16 mx-auto review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-white "
+                                style=" background-image: linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,.5));">
+                                <span style="line-height: 3.4rem;"
+                                    class="text-2xl font-bold w-full block text-center">7.5</span>
+                            </div>
+                            <div class="post-info-items absolute bottom-0 px-8 py-8">
+                                <div class="post-info-item inline-block ml-4">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">28/08/2019</span>
+                                </div>
+                                <div class="post-info-item inline-block ml-4">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">65</span>
+                                </div>
+                                <div class="post-info-item inline-block">
+                                    <i class="text-gray-500 far fa-clock align-middle"></i>
+                                    <span class="text-gray-500 align-middle mr-1 font-araby-bold">511</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="py-4">
+                        <div class="font-bold text-xl mb-2 w-full"><a href="#" class="hover:text-red-600">Wreckfest</a>
+                        </div>
+                        <div class="text-xs text-gray-600 w-full">Wreckfest هي لعبة سباقات تركّز على سباقات التحطيم
+                            العنيفة وديربي التحطيم وهي التكملة الروحية لألعاب FlatOut من مطوّريها في Bugbear
+                            Entertainment، اللع…</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Reviews Section End -->
+
+
+    <!-- Videos Section Begin -->
+    <div class="videos-section">
+        <div class="container mx-auto">
+            <div class="flex mt-16">
+                <div class="lg:w-4/6 ml-5">
+                    <div class="video-row flex">
+                        <a href="#" class="video-item w-1/3 h-auto m-2">
+                            <div class="relative block h-48 bg-center bg-cover bg-no-repeat"
+                                style="background: center / cover linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), center / cover url(https://img.youtube.com/vi/RClQiUwfZ7g/hqdefault.jpg)">
+                                <i class="far fa-play-circle text-white text-4xl text-center w-full mt-20"></i>
+                            </div>
+                            <div class="font-bold text-xl mt-3 block">إستعراض Wreckfest على الأجهزة المنزلية المطوّرة
+                            </div>
+                        </a>
+                        <a href="#" class="video-item w-1/3 h-auto m-2">
+                            <div class="relative block h-48 bg-center bg-cover bg-no-repeat"
+                                style="background: center / cover linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), center / cover url(https://img.youtube.com/vi/RClQiUwfZ7g/hqdefault.jpg)">
+                                <i class="far fa-play-circle text-white text-4xl text-center w-full mt-20"></i>
+                            </div>
+                            <div class="font-bold text-xl mt-3 block">إستعراض Wreckfest على الأجهزة المنزلية المطوّرة
+                            </div>
+                        </a>
+                        <a href="#" class="video-item w-1/3 h-auto m-2">
+                            <div class="relative block h-48 bg-center bg-cover bg-no-repeat"
+                                style="background: center / cover linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), center / cover url(https://img.youtube.com/vi/RClQiUwfZ7g/hqdefault.jpg)">
+                                <i class="far fa-play-circle text-white text-4xl text-center w-full mt-20"></i>
+                            </div>
+                            <div class="font-bold text-xl mt-3 block">إستعراض Wreckfest على الأجهزة المنزلية المطوّرة
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="video-row flex mt-8">
+                        <a href="#" class="video-item w-1/3 h-auto m-2">
+                            <div class="relative block h-48 bg-center bg-cover bg-no-repeat"
+                                style="background: center / cover linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), center / cover url(https://img.youtube.com/vi/RClQiUwfZ7g/hqdefault.jpg)">
+                                <i class="far fa-play-circle text-white text-4xl text-center w-full mt-20"></i>
+                            </div>
+                            <div class="font-bold text-xl mt-3 block">إستعراض Wreckfest على الأجهزة المنزلية المطوّرة
+                            </div>
+                        </a>
+                        <a href="#" class="video-item w-1/3 h-auto m-2">
+                            <div class="relative block h-48 bg-center bg-cover bg-no-repeat"
+                                style="background: center / cover linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), center / cover url(https://img.youtube.com/vi/RClQiUwfZ7g/hqdefault.jpg)">
+                                <i class="far fa-play-circle text-white text-4xl text-center w-full mt-20"></i>
+                            </div>
+                            <div class="font-bold text-xl mt-3 block">إستعراض Wreckfest على الأجهزة المنزلية المطوّرة
+                            </div>
+                        </a>
+                        <a href="#" class="video-item w-1/3 h-auto m-2">
+                            <div class="relative block h-48 bg-center bg-cover bg-no-repeat"
+                                style="background: center / cover linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)), center / cover url(https://img.youtube.com/vi/RClQiUwfZ7g/hqdefault.jpg)">
+                                <i class="far fa-play-circle text-white text-4xl text-center w-full mt-20"></i>
+                            </div>
+                            <div class="font-bold text-xl mt-3 block">إستعراض Wreckfest على الأجهزة المنزلية المطوّرة
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="w-2/6">
+                    <div class="sidebar-widget bg-black bg-no-repeat bg-center bg-cover rounded-lg p-6 text-white"
+                        style="background-image: center / cover url('https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod26feb19b/img/sidebar.jpg');">
+                        <div class="sidebar-widget-header flex items-center justify-between mb-6">
+                            <div
+                                class="sidebar-widget-header-right bg-red-600 border-red-600 border-2 rounded-t-full rounded-l-full px-3 py-1">
+                                مدونة الأعضاء</div>
+                            <a href="#"
+                                class="sidebar-widget-header-left bg-transparent border-gray-400 text-gray-400 border-2 rounded-t-full rounded-r-full px-3 py-1">عرض
+                                الكل</a>
+                        </div>
+                        <div class="flex items-center justify-between my-4">
+                            <a href="#" class="w-3/12 h-12 ml-4 bg-no-repeat bg-center bg-cover rounded-card"
+                                style="background-image: url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-white text-lg leading-none">
+                                    مراجعة Odin Sphere Lei
+                                    مراجعة Odin Sphere Leifthrasir
+                                    fthrasir</a>
+                            </div>
+                            <div class="px-4 review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-2xl"
+                                style="line-height: 2.5rem">
+                                6
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between my-4">
+                            <a href="#" class="w-3/12 h-12 ml-4 bg-no-repeat bg-center bg-cover rounded-card"
+                                style="background-image: url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-white text-lg leading-none">
+                                    مراجعة Odin Sphere Lei
+                                    مراجعة Odin Sphere Leifthrasir
+                                    fthrasir</a>
+                            </div>
+                            <div class="px-4 review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-2xl"
+                                style="line-height: 2.5rem">
+                                6
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Videos Section End -->
+    <!-- Footer Section Begin -->
+    <footer class="text-white py-4"
+        style="background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.4)),url('https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod26feb19b/img/footer_HQ_PNG.png');">
+        <div class="container mx-auto mt-6 flex justify-between">
+            <!-- Footer Widget 1 -->
+            <div class="align-top h-full block">
+                <img class="w-64 h-auto mb-3"
+                    src="https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod/img/tg_logo_big.png "
+                    alt="logo-footer" />
+                <p class="text-gray-400 font-araby-bold text-lg">أخبار ألعاب الفيديو، مراجعات ألعاب الفيديو</p>
+            </div>
+            <!-- Footer Widget 2 -->
+            <div class="align-top h-full block">
+                <ul class="list-reset">
+                    <li class="text-gray-400 font-araby-bold"> <a href="#">الرئيسية</a></li>
+                    <li class="text-gray-400 font-araby-bold"> <a href="#">الاعلان</a></li>
+                    <li class="text-gray-400 font-araby-bold"> <a href="#">الاتصال بنا</a></li>
+                </ul>
+            </div>
+            <!-- Footer Widget 3 -->
+            <div class="align-top h-full block">
+                <ul class="list-reset">
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Home</a></li>
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Advertise</a></li>
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Contact Us</a></li>
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Privacy Statement</a></li>
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <!-- Footer Widget 4 -->
+            <div class="w-1/4 align-top h-full block">
+                <div class="text-gray-400 font-araby-bold mb-4 text-2xl">حمل الآن تطبيق ترو جيمنج</div>
+                <div class="text-gray-300 font-araby-bold">حمل تطبيق ترو جيمنج وتحكم بمشاهدة ما تريد أينما تريد بصورة
+                    أوضح , أرقى و أدق</div>
+                <div class="downnload-section flex items-center justify-between mt-6">
+                    <img src="https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod/img/img1.png" alt="">
+                    <img src="https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod/img/img2.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container lg:flex block text-center items-center justify-between mx-auto mt-16 mb-4">
+            <p class="text-red-600">
+                ترو جيمنج | جميع الحقوق محفوظة © 2019.
+            </p>
+            <div class="flex text-red-600">
+                <p>
+                    الموقع من تطوير <a class="text-red-600" href="https://www.itqan.do" target="_blank">ITQAN</a>
+                </p>
+                <p>
+                    &nbsp;| التطبيق من تطوير <a class="text-red-600" href="https://ar.karizma.io/"
+                        target="_blank">Karizma</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="js/siema.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

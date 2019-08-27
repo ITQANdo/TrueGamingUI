@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>True-Gaming</title>
+</head>
+
+<body class="font-araby-regular bg-sectiongray">
+    <!-- Navbar Section Begin -->
+    <nav class="navbar-section bg-navbg h-12 absolute left-0 right-0" style="top: 20px;z-index: 9;">
+        <div class="container mx-auto flex items-center justify-between flex-wrap">
+            <div class="flex items-center flex-shrink-0 text-white ml-6">
+                <img src="https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod/img/tg_logo_big.png"
+                    class="h-10" alt="">
+            </div>
+            <div class="block lg:hidden">
+                <button
+                    class="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <ul class="lg:flex-grow flex">
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            أخبار
+                        </a>
+                    </li>
+                    <li style="position: relative" class="menu-element">
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            مراجعات
+                        </a>
+                        <ul class="submenu-element absolute text-white bg-red-600 p-6 text-lg flex flex-wrap w-64 justify-between items-center"
+                            style="top: 3rem; right: 0; left: auto;">
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                            <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            فيديو
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            تقارير
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            منتديات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#responsive-header"
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            مواعيد الإصدار
+                        </a>
+                    </li>
+                </ul>
+                <div class="relative text-white ml-4">
+                    <input type="search" name="serch" placeholder="ابحث في الموقع"
+                        class="bg-transparent h-8 px-5 pr-10 rounded-full text-lg focus:outline-none font-araby-bold">
+                    <button type="submit" class="absolute right-0 top-0 mt-3 mr-4 text-red-600">
+                        <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                            xml:space="preserve" width="512px" height="512px">
+                            <path
+                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="social-media-section text-gray-700">
+
+                    <a href="#" class=""><i class="fab fa-facebook-f bg-gray-300 rounded-full p-2"></i></a>
+                    <a href="#" class=""><i class="fab fa-twitter bg-gray-300 rounded-full p-2"></i></a>
+                    <a href="#" class=""><i class="fab fa-youtube bg-gray-300 rounded-full p-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+    <!-- Slider Section Begin -->
+    <div>
+        <div class="slider-section h-siema w-full bg-no-repeat bg-cover bg-center"
+            style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url( https://www.true-gaming.net/home/wp-content/uploads/2019/08/0.jpeg )">
+            <div class="container mx-auto justify-between flex">
+                <div class="flex pt-56">
+                    <div class="ml-4">
+                        <img class="w-32 h-auto rounded-t-lg rounded-bl-lg "
+                            src="https://infopedia24.com/wp-content/uploads/Summer-Catchers.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="text-white text-3xl font-araby-bold">Summer Catchers</div>
+                        <div class=" flex items-center justify-between">
+                            <div class="ml-4">
+                                <span class="text-white font-araby-bold">تاريخ النشر:</span>
+                                <span class="text-gray-300">Jul 16, 2019</span>
+                            </div>
+                            <div class="ml-4">
+                                <span class="text-white font-araby-bold">تاريخ النشر:</span>
+                                <span class="text-gray-300">Jul 16, 2019</span>
+                            </div>
+                            <div>
+                                <span class="text-white font-araby-bold">تاريخ النشر:</span>
+                                <span class="text-gray-300">Jul 16, 2019</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap mb-3">
+                            <div
+                                class="mb-1 mt-3 tag bg-red-600 text-white border-red-600 border-2 px-6 py-1 rounded-t-full rounded-l-full ml-4">
+                                مراجعة
+                            </div>
+                            <div
+                                class="mb-1 mt-3 tag bg-red-600 text-white border-red-600 border-2 px-6 py-1 rounded-t-full rounded-l-full ml-4">
+                                مراجعة
+                            </div>
+                            <div
+                                class="mb-1 mt-3 tag bg-red-600 text-white border-red-600 border-2 px-6 py-1 rounded-t-full rounded-l-full ml-4">
+                                مراجعة
+                            </div>
+                        </div>
+                        <div class="post-info-items">
+                            <div class="post-info-item inline-block ml-4">
+                                <i class="text-gray-500 far fa-clock align-middle text-2xl"></i>
+                                <span class="text-gray-500 align-middle mr-1 font-araby-bold">26 أغسطس 2019</span>
+                            </div>
+                            <div class="post-info-item inline-block ml-4">
+                                <i class="text-gray-500 far fa-comment align-middle text-2xl"></i>
+                                <span class="text-gray-500 align-middle mr-1 font-araby-bold">التعليقات: 288</span>
+                            </div>
+                            <div class="post-info-item inline-block">
+                                <i class="text-gray-500 far fa-eye align-middle text-2xl"></i>
+                                <span class="text-gray-500 align-middle mr-1 font-araby-bold">1893 مشاهدة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="rating-header pt-56 text-center">
+                    <div class="w-24 h-24 mx-auto mb-3 review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-5xl text-white"
+                        style="line-height: 5.5rem" style="background-color: rgba(45, 45, 45, 1);">
+                        6</div>
+                    <div class="text-red-600 font-araby-bold text-lg">تقييم تروجيمنج</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider Section End -->
+
+    <!-- Articles Section Begin -->
+    <div class="articles-section container mx-auto block">
+        <div class="flex mt-16 justify-between flex-wrap lg:flex-no-wrap">
+            <div class="lg:w-4/6 sm:w-full ml-5 py-4">
+                <div class="text-black text-2xl font-araby-bold mb-6">
+                    Summer Catchers
+                </div>
+                <div class="text-black text-justify mb-6">
+                    كم أحب الصيف! ما أروع تناول المثلجات والتمتع بالإجازة بعيدا عن ضغوطات الحياة! كم هو مشرق ودافئ ويشع
+                    بالحياة، ألا تحبون الصيف؟ يا لها من مصادفة، ولا أنا كذلك! لطالما كرهت هذا الفصل الملتهب الملي
+                    بالحشرات والعرق والإجهاد! ألا تشعرون بالأمر ذاته؟ حسنا، فلنهدأ قليلاً ونرتب أفكارنا بهدوء؛ دعوني
+                    أعرفكم على Summer Catchers إنها وبكل بساطة مغامرة نخوضها عبر فصول السنة المختلفة كي نصل إلى الصيف!
+                    يا لها من لعبة مناسبة تصل في الوقت المناسب! قد تكون وسيلة مثالية لتحديد موقفنا من هذا الفصل، هل نحبه
+                    أم نكرهه؟ هل أنتم على استعداد للمعاناة في سبيل الحصول على مشروب بارد منعش وضربة شمس ستودي بكم إلى
+                    المشفى في الوقت ذاته؟ أظنني أفزعت عددا لا بأس به منكم بهذه المقدمة الغريبة ولكن إلى الأشخاص الذين لا
+                    يزالون في أماكنهم، تفضلوا بالدخول رجاءً.
+                </div>
+                <div class="mb-6">
+                    <img src="https://www.true-gaming.net/home/wp-content/uploads/2019/08/maxresdefault-960x540.jpg"
+                        alt="" />
+                </div>
+                <div class="text-black text-justify mb-6">
+                    كم أحب الصيف! ما أروع تناول المثلجات والتمتع بالإجازة بعيدا عن ضغوطات الحياة! كم هو مشرق ودافئ ويشع
+                    بالحياة، ألا تحبون الصيف؟ يا لها من مصادفة، ولا أنا كذلك! لطالما كرهت هذا الفصل الملتهب الملي
+                    بالحشرات والعرق والإجهاد! ألا تشعرون بالأمر ذاته؟ حسنا، فلنهدأ قليلاً ونرتب أفكارنا بهدوء؛ دعوني
+                    أعرفكم على Summer Catchers إنها وبكل بساطة مغامرة نخوضها عبر فصول السنة المختلفة كي نصل إلى الصيف!
+                    يا لها من لعبة مناسبة تصل في الوقت المناسب! قد تكون وسيلة مثالية لتحديد موقفنا من هذا الفصل، هل نحبه
+                    أم نكرهه؟ هل أنتم على استعداد للمعاناة في سبيل الحصول على مشروب بارد منعش وضربة شمس ستودي بكم إلى
+                    المشفى في الوقت ذاته؟ أظنني أفزعت عددا لا بأس به منكم بهذه المقدمة الغريبة ولكن إلى الأشخاص الذين لا
+                    يزالون في أماكنهم، تفضلوا بالدخول رجاءً.
+                </div>
+                <div class="rounded-lg">
+                    <div style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), center / cover url(https://infopedia24.com/wp-content/uploads/Summer-Catchers.jpg);"
+                        class="rounded-t-lg px-8 py-4">
+                        <div class="text-white text-3xl font-araby-bold mb-4">Summer Catchers</div>
+
+                        <div class="flex items-center mb-4">
+                            <span class="ml-2 align-middle"><i class="fa fa-plus fa-lg"
+                                    style="color: #60d874;"></i></span>
+                            <span class="text-white align-middle"> عالم خلاب بتوجه فني ساحر، ألحان جميلة، محتوى جانبي
+                                مسل و شخصيات مثيرة للبهجة.</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <span class="ml-2 align-middle"><i class="fa fa-minus fa-lg"
+                                    style="color: #ff6252;"></i></span>
+                            <span class="text-white align-middle">نظام لعب محدود يعاني من العشوائية و التكرار و المهام
+                                الرئيسية وقتال الزعماء لا يضفيان عليه أي تنوع حقيقي.</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <span class="ml-2 align-middle"><i class="fa fa-gavel fa-lg"
+                                    style="color: #f6b007;"></i></span>
+                            <span class="text-white align-middle"> Summer Catchers تمتلك الرؤية الفنية وتحمل في خضمها
+                                تجربة ترسخ في الذهن وإنه لمن القسوة أن يقع كل هذا الجمال الذي يرسم البسمة على كل من يراه
+                                ضحية نظام لعب موؤود، لكن و ياللأسف فهذا ما حدث هنا تماما.</span>
+                        </div>
+                    </div>
+                    <div class="bg-black flex items-center justify-between px-8 py-4">
+                        <div>
+                            <span class="text-white font-araby-bold">تاريخ النشر:</span>
+                            <span class="text-gray-300">Jul 16, 2019</span>
+                        </div>
+                        <div>
+                            <span class="text-white font-araby-bold">تاريخ النشر:</span>
+                            <span class="text-gray-300">Jul 16, 2019</span>
+                        </div>
+                        <div>
+                            <span class="text-white font-araby-bold">تاريخ النشر:</span>
+                            <span class="text-gray-300">Jul 16, 2019</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="border border-gray-600 mt-4 mb-1"></div>
+                <div class="flex flex-wrap mb-3">
+                    <div
+                        class="mb-1 mt-3 tag bg-red-600 text-white border-red-600 border-2 px-6 py-1 rounded-t-full rounded-l-full ml-4">
+                        مراجعة</div>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a><a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                    <a href="#"
+                        class="mb-1 mt-3 tag bg-transparent text-gray-700 border-gray-700 border-2 px-6 py-1 rounded-t-full rounded-r-full ml-4  flex-shrink-0">عرض
+                        الكل</a>
+                </div>
+                <div class="flex bg-white p-6 rounded-lg mb-6">
+                    <div class="flex-shrink-0 ml-4">
+                        <img class="w-20 h-20"
+                            src="https://secure.gravatar.com/avatar/b4c1963165fe32682977a327b6648bf2?s=100&d=mm&r=pg"
+                            alt="">
+                    </div>
+                    <div>
+                        <div class="text-lg font-araby-bold">أنس المعاني</div>
+                        <div class="text-sm text-gray-600">مراجع معتمد في الموقع، لا يمتلك أنس ميولاً أو انتماءً لطرف
+                            معين في عالم الألعاب فالشركة
+                            التي تقدم التجارب الأكثر متعة بالنسبة إليه هي شركته المفضلة والتي يمكن أن تفقد هذا اللّقب
+                            بين ليلة وضحاها إن لم تواظب على أدائها، NIGHTMARE HUNTER هو اللقب الذي يعرف فيه بمجتمع
+                            تروجيمنج و Persona 5 هي تجربته المفضلة في عالم الألعاب حتى لحظة كتابة هذه السطور</div>
+                    </div>
+                </div>
+                <div class="article-bar-title">
+                    <div class="flex items-center justify-between relative">
+                        <div
+                            class="flex-shrink-0 tag-red bg-red-600 text-white border-2 border-red-600 px-6 py-1 rounded-t-full rounded-l-full">
+                            أحدث الأخبار
+                        </div>
+                        <div class="border-b-2 border-red-600 absolute bottom-0" style="left: 25px; right: 17px;"></div>
+                        <div
+                            class="tag-red flex-shrink-0 bg-transparent text-red-600 border-2 border-red-600 px-6 py-1 rounded-t-full rounded-r-full">
+                            <a href="">عرض الكل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white h-24"></div>
+            </div>
+            <div class="lg:w-2/6 sm:w-full">
+                <div class="sidebar-widget bg-black bg-no-repeat bg-center bg-cover rounded-lg p-6 text-white mb-4"
+                    style="background-image: url('https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod26feb19b/img/sidebar.jpg');">
+                    <div class="sidebar-widget-header flex items-center justify-between mb-6">
+                        <div
+                            class="sidebar-widget-header-right bg-red-600 border-red-600 border-2 rounded-t-full rounded-l-full px-3 py-1">
+                            مدونة الأعضاء</div>
+                        <a href="#"
+                            class="sidebar-widget-header-left bg-transparent border-gray-400 text-gray-400 border-2 rounded-t-full rounded-r-full px-3 py-1">عرض
+                            الكل</a>
+                    </div>
+                    <div class="flex items-center justify-between my-4">
+                        <a href="#" class="w-3/12 h-12 ml-4 bg-no-repeat bg-center bg-cover rounded-card"
+                            style="background-image: url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
+                        </a>
+                        <div class="text-sm">
+                            <a href="#" class="text-white text-lg leading-none">
+                                مراجعة Odin Sphere Lei
+                                مراجعة Odin Sphere Leifthrasir
+                                fthrasir</a>
+                        </div>
+                        <div class="px-4 review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-2xl"
+                            style="line-height: 2.5rem">
+                            6
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between my-4">
+                        <a href="#" class="w-3/12 h-12 ml-4 bg-no-repeat bg-center bg-cover rounded-card"
+                            style="background-image: url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
+                        </a>
+                        <div class="text-sm">
+                            <a href="#" class="text-white text-lg leading-none">
+                                مراجعة Odin Sphere Lei
+                                مراجعة Odin Sphere Leifthrasir
+                                fthrasir</a>
+                        </div>
+                        <div class="px-4 review-circle-widget border-4 rounded-full border-red-600 align-middle text-center text-2xl"
+                            style="line-height: 2.5rem">
+                            6
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="sidebar-widget bg-black bg-no-repeat bg-center bg-cover rounded-lg p-6 text-white"
+                    style="background-image: url('https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod26feb19b/img/sidebar.jpg');">
+                    <div class="review-info flex justify-between">
+                        <div>
+                            <div class="text-white mb-4">
+                                متوسط تقييم المستخدم
+                            </div>
+                            <div
+                                class="flex-shrink-0 tag-red bg-red-600 text-white border-2 border-red-600 px-6 py-1 rounded-t-full rounded-l-full">
+                                أكتب مراجعة </div>
+                        </div>
+                        <div class="rating-header text-center">
+                            <div class="w-16 h-16 mx-auto mb-3 review-circle-widget border-4 rounded-full text-gray-400 align-middle text-center text-3xl text-white"
+                                style="line-height: 3.5rem" style="background-color: rgba(45, 45, 45, 1);">
+                                6</div>
+                            <div class="text-gray-400 font-araby-bold">تقييم تروجيمنج</div>
+                        </div>
+                    </div>
+                    <div class="review-action">
+                        <div class="bg-red-700 rounded-r-full rounded-t-full mt-4 flex justify-between">
+                            <div class="bg-red-600 rounded-r-full rounded-l-full px-4 py-1">قييم</div>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">1</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">2</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">3</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">4</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">5</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">6</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">7</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">8</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 py-1">9</a>
+                            <a href="#" class="rounded-r-full rounded-l-full px-2 pl-3 py-1">10</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <div class="text-gray-400">تقييمك</div>
+                        <div class="text-red-600">?</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Articles Section End -->
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="text-white py-4"
+        style="background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.4)),url('https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod26feb19b/img/footer_HQ_PNG.png');">
+        <div class="container mx-auto mt-6 flex justify-between">
+            <!-- Footer Widget 1 -->
+            <div class="align-top h-full block">
+                <img class="w-64 h-auto mb-3"
+                    src="https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod/img/tg_logo_big.png "
+                    alt="logo-footer" />
+                <p class="text-gray-400 font-araby-bold text-lg">أخبار ألعاب الفيديو، مراجعات ألعاب الفيديو</p>
+            </div>
+            <!-- Footer Widget 2 -->
+            <div class="align-top h-full block">
+                <ul class="list-reset">
+                    <li class="text-gray-400 font-araby-bold"> <a href="#">الرئيسية</a></li>
+                    <li class="text-gray-400 font-araby-bold"> <a href="#">الاعلان</a></li>
+                    <li class="text-gray-400 font-araby-bold"> <a href="#">الاتصال بنا</a></li>
+                </ul>
+            </div>
+            <!-- Footer Widget 3 -->
+            <div class="align-top h-full block">
+                <ul class="list-reset">
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Home</a></li>
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Advertise</a></li>
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Contact Us</a></li>
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Privacy Statement</a></li>
+                    <li class="text-gray-600 font-araby-bold"> <a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <!-- Footer Widget 4 -->
+            <div class="w-1/4 align-top h-full block">
+                <div class="text-gray-400 font-araby-bold mb-4 text-2xl">حمل الآن تطبيق ترو جيمنج</div>
+                <div class="text-gray-300 font-araby-bold">حمل تطبيق ترو جيمنج وتحكم بمشاهدة ما تريد أينما تريد بصورة
+                    أوضح , أرقى و أدق</div>
+                <div class="downnload-section flex items-center justify-between mt-6">
+                    <img src="https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod/img/img1.png" alt="">
+                    <img src="https://cdn.jsdelivr.net/gh/truegaming/pubic_site_content@prod/img/img2.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container lg:flex block text-center items-center justify-between mx-auto mt-16 mb-4">
+            <p class="text-red-600">
+                ترو جيمنج | جميع الحقوق محفوظة © 2019.
+            </p>
+            <div class="flex text-red-600">
+                <p>
+                    الموقع من تطوير <a class="text-red-600" href="https://www.itqan.do" target="_blank">ITQAN</a>
+                </p>
+                <p>
+                    &nbsp;| التطبيق من تطوير <a class="text-red-600" href="https://ar.karizma.io/"
+                        target="_blank">Karizma</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="js/siema.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
