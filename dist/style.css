@@ -11731,6 +11731,12 @@ video {
   visibility: visible;
 }
 
+@media (min-width: 1024px) {
+  .submenu-element {
+    top: 3rem !important;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

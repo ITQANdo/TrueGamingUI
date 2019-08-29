@@ -64,3 +64,11 @@
     display: flex;
     visibility: visible;
 }
+
+
+
+@media (min-width: 1024px) {
+    .submenu-element {
+        top: 3rem !important; 
+    }
+  }

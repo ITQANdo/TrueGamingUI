@@ -21,19 +21,19 @@
                     class="h-10 mr-2 lg:mr-0 mt-1 lg:mt-0" alt="">
             </div>
             <div class="block lg:hidden">
-                <button
-                    class="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-white hover:border-white">
+                <button onclick="toggleMenu()"
+                    class="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-white hover:border-white ml-2">
                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>Menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                     </svg>
                 </button>
             </div>
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden">
-                <ul class="lg:flex-grow flex">
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto show-menu lg:bg-transparent bg-gray-800 hidden lg:visible">
+                <ul class="lg:flex-grow lg:flex block">
                     <li>
                         <a href="#responsive-header"
-                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-2 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
                             <i class="fas fa-home"></i>
                         </a>
                     </li>
@@ -48,8 +48,8 @@
                             class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
                             مراجعات
                         </a>
-                        <ul class="submenu-element absolute text-white bg-red-600 p-6 text-lg flex flex-wrap w-64 justify-between items-center"
-                            style="top: 3rem; right: 0; left: auto;">
+                        <ul class="top-0 submenu-element relative lg:absolute text-white bg-red-600 p-6 text-lg flex flex-wrap w-full lg:w-64 justify-between items-center top-0"
+                            style="right: 0; left: auto;">
                             <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
                             <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
                             <li class="w-1/2 text-center"><a href="#">جميع المراجعات</a></li>
@@ -60,32 +60,32 @@
                     </li>
                     <li>
                         <a href="#responsive-header"
-                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-2 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
                             فيديو
                         </a>
                     </li>
                     <li>
                         <a href="#responsive-header"
-                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-2 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
                             تقارير
                         </a>
                     </li>
                     <li>
                         <a href="#responsive-header"
-                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-2 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
                             منتديات
                         </a>
                     </li>
                     <li>
                         <a href="#responsive-header"
-                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-4 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
+                            class="block font-araby-bold text-base leading-3 lg:inline-block lg:mt-0 text-white hover:text-white ml-2 h-12 border-b-4 border-transparent hover:border-red-600 px-2">
                             مواعيد الإصدار
                         </a>
                     </li>
                 </ul>
                 <div class="relative text-white ml-4">
                     <input type="search" name="serch" placeholder="ابحث في الموقع"
-                        class="bg-transparent h-8 px-5 pr-10 rounded-full text-lg focus:outline-none font-araby-bold">
+                        class="w-40 bg-transparent h-8  pr-10 rounded-full text-lg focus:outline-none font-araby-bold">
                     <button type="submit" class="absolute right-0 top-0 mt-3 mr-4 text-red-600">
                         <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
@@ -96,7 +96,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="social-media-section text-gray-700">
+                <div class="social-media-section text-gray-700 p-2">
 
                     <a href="#" class=""><i class="fab fa-facebook-f bg-gray-300 rounded-full p-2"></i></a>
                     <a href="#" class=""><i class="fab fa-twitter bg-gray-300 rounded-full p-2"></i></a>
@@ -115,23 +115,26 @@
                     <div
                         class="mb-3 mt-24 tag bg-red-600 text-white inline-block px-6 py-1 rounded-t-full rounded-l-full mx-auto">
                         مراجعة</div>
-                    <div class="text-white lg:text-5xl text-3xl px-2 lg:px-0 font-araby-bold mb-3">حصري: Michael Pachter
-                        يتوقع أن تتجاوز ننتندو
+                    <div class="text-white lg:text-5xl text-3xl font-araby-bold mb-3">حصري: Michael Pachter يتوقع أن
+                        تتجاوز ننتندو
                         أهدافها التجارية هذا العام مع إطلاق Switch Lite</div>
 
-                    <div class="text-gray-300 text-2xl font-araby-bold mb-3">هل تستطيع أن تفرض سيطرتك؟</div>
+                    <div class="text-gray-300 lg:text-3xl text-2xl font-araby-bold mb-3">هل تستطيع أن تفرض سيطرتك؟</div>
                     <div class="post-info-items">
                         <div class="post-info-item inline-block ml-4">
-                            <i class="text-gray-500 far fa-clock align-middle text-2xl"></i>
-                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">26 أغسطس 2019</span>
+                            <i class="text-gray-500 far fa-clock align-middle text-base"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold text-base">26 أغسطس
+                                2019</span>
                         </div>
                         <div class="post-info-item inline-block ml-4">
-                            <i class="text-gray-500 far fa-comment align-middle text-2xl"></i>
-                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">التعليقات: 288</span>
+                            <i class="text-gray-500 far fa-comment align-middle text-base"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold text-base">التعليقات:
+                                288</span>
                         </div>
                         <div class="post-info-item inline-block">
-                            <i class="text-gray-500 far fa-eye align-middle text-2xl"></i>
-                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">1893 مشاهدة</span>
+                            <i class="text-gray-500 far fa-eye align-middle text-base"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold text-base">1893
+                                مشاهدة</span>
                         </div>
                     </div>
                 </center>
@@ -144,23 +147,26 @@
                     <div
                         class="mb-3 mt-24 tag bg-red-600 text-white inline-block px-6 py-1 rounded-t-full rounded-l-full mx-auto">
                         مراجعة</div>
-                    <div class="text-white lg:text-5xl text-3xl px-2 lg:px-0 font-araby-bold mb-3">حصري: Michael Pachter
-                        يتوقع أن تتجاوز ننتندو
+                    <div class="text-white lg:text-5xl text-3xl font-araby-bold mb-3">حصري: Michael Pachter يتوقع أن
+                        تتجاوز ننتندو
                         أهدافها التجارية هذا العام مع إطلاق Switch Lite</div>
 
-                    <div class="text-gray-300 text-2xl font-araby-bold mb-3">هل تستطيع أن تفرض سيطرتك؟</div>
+                    <div class="text-gray-300 lg:text-3xl text-2xl font-araby-bold mb-3">هل تستطيع أن تفرض سيطرتك؟</div>
                     <div class="post-info-items">
                         <div class="post-info-item inline-block ml-4">
-                            <i class="text-gray-500 far fa-clock align-middle text-2xl"></i>
-                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">26 أغسطس 2019</span>
+                            <i class="text-gray-500 far fa-clock align-middle text-base"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold text-base">26 أغسطس
+                                2019</span>
                         </div>
                         <div class="post-info-item inline-block ml-4">
-                            <i class="text-gray-500 far fa-comment align-middle text-2xl"></i>
-                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">التعليقات: 288</span>
+                            <i class="text-gray-500 far fa-comment align-middle text-base"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold text-base">التعليقات:
+                                288</span>
                         </div>
                         <div class="post-info-item inline-block">
-                            <i class="text-gray-500 far fa-eye align-middle text-2xl"></i>
-                            <span class="text-gray-500 align-middle mr-1 font-araby-bold">1893 مشاهدة</span>
+                            <i class="text-gray-500 far fa-eye align-middle text-base"></i>
+                            <span class="text-gray-500 align-middle mr-1 font-araby-bold text-base">1893
+                                مشاهدة</span>
                         </div>
                     </div>
                 </center>
@@ -185,10 +191,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="articles mt-8 block md:flex lg:block md:flex-wrap ">
+                <div class="articles mt-8 block md:flex lg:block md:flex-wrap">
                     <div
-                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400 ">
-                        <div class="lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
+                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 lg:pb-4 pb-0 pt-4 hover:bg-gray-400 ">
+                        <div class="mx-4 lg:mx-0 lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
                             style="background: center / cover url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
                             title="">
                         </div>
@@ -209,32 +215,32 @@
                                     مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
                                     الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
                             </div>
-                            <div class="flex justify-between align">
-                                <div class="post-info-items">
+                            <div class="flex justify-between flex-wrap">
+                                <div class="post-info-items mb-2 lg:mb-0">
                                     <div class="post-info-item inline-block ml-4">
                                         <i class="text-gray-500 far fa-clock align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
                                     </div>
                                     <div class="post-info-item inline-block ml-4">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-comment align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
                                     </div>
                                     <div class="post-info-item inline-block">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-eye align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
                                     </div>
 
                                 </div>
                                 <a href="#"
-                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    class="hidden lg:block flex-shrink-0 tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500">اقرأ
                                     أكثر</a>
                             </div>
                         </div>
                     </div>
 
                     <div
-                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400 ">
-                        <div class="lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
+                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 lg:pb-4 pb-0 pt-4 hover:bg-gray-400 ">
+                        <div class="mx-4 lg:mx-0 lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
                             style="background: center / cover url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
                             title="">
                         </div>
@@ -255,32 +261,32 @@
                                     مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
                                     الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
                             </div>
-                            <div class="flex justify-between align">
-                                <div class="post-info-items">
+                            <div class="flex justify-between flex-wrap">
+                                <div class="post-info-items mb-2 lg:mb-0">
                                     <div class="post-info-item inline-block ml-4">
                                         <i class="text-gray-500 far fa-clock align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
                                     </div>
                                     <div class="post-info-item inline-block ml-4">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-comment align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
                                     </div>
                                     <div class="post-info-item inline-block">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-eye align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
                                     </div>
 
                                 </div>
                                 <a href="#"
-                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    class="hidden lg:block flex-shrink-0 tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500">اقرأ
                                     أكثر</a>
                             </div>
                         </div>
                     </div>
 
                     <div
-                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400 ">
-                        <div class="lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
+                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 lg:pb-4 pb-0 pt-4 hover:bg-gray-400 ">
+                        <div class="mx-4 lg:mx-0 lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
                             style="background: center / cover url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
                             title="">
                         </div>
@@ -301,32 +307,32 @@
                                     مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
                                     الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
                             </div>
-                            <div class="flex justify-between align">
-                                <div class="post-info-items">
+                            <div class="flex justify-between flex-wrap">
+                                <div class="post-info-items mb-2 lg:mb-0">
                                     <div class="post-info-item inline-block ml-4">
                                         <i class="text-gray-500 far fa-clock align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
                                     </div>
                                     <div class="post-info-item inline-block ml-4">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-comment align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
                                     </div>
                                     <div class="post-info-item inline-block">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-eye align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
                                     </div>
 
                                 </div>
                                 <a href="#"
-                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    class="hidden lg:block flex-shrink-0 tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500">اقرأ
                                     أكثر</a>
                             </div>
                         </div>
                     </div>
 
                     <div
-                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400 ">
-                        <div class="lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
+                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 lg:pb-4 pb-0 pt-4 hover:bg-gray-400 ">
+                        <div class="mx-4 lg:mx-0 lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
                             style="background: center / cover url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
                             title="">
                         </div>
@@ -347,32 +353,32 @@
                                     مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
                                     الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
                             </div>
-                            <div class="flex justify-between align">
-                                <div class="post-info-items">
+                            <div class="flex justify-between flex-wrap">
+                                <div class="post-info-items mb-2 lg:mb-0">
                                     <div class="post-info-item inline-block ml-4">
                                         <i class="text-gray-500 far fa-clock align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
                                     </div>
                                     <div class="post-info-item inline-block ml-4">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-comment align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
                                     </div>
                                     <div class="post-info-item inline-block">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-eye align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
                                     </div>
 
                                 </div>
                                 <a href="#"
-                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    class="hidden lg:block flex-shrink-0 tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500">اقرأ
                                     أكثر</a>
                             </div>
                         </div>
                     </div>
 
                     <div
-                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 pb-4 pt-4 hover:bg-gray-400 ">
-                        <div class="lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
+                        class="artcile-single w-full md:w-1/2 lg:w-full lg:max-w-full lg:flex block border-b-2 border-gray-500 lg:pb-4 pb-0 pt-4 hover:bg-gray-400 ">
+                        <div class="mx-4 lg:mx-0 lg:h-auto lg:w-64 h-64 lg:flex-none block rounded-t lg:rounded-card text-center"
                             style="background: center / cover url('https://image.redbull.com/rbcom/010/2013-11-19/1331620998033_2/0100/0/1/10-hidden-powers-of-the-xbox-one.jpg');"
                             title="">
                         </div>
@@ -393,29 +399,32 @@
                                     مجهولة، أن شركة مايكروسوفت تنصتت على مُستخدمي Xbox One الذين قاموا باستخدام الأوامر
                                     الصوتية عن طريق طرفية Kinect أو عن طريق المساعد الذكي كورتانا، و ذ…</p>
                             </div>
-                            <div class="flex justify-between align">
-                                <div class="post-info-items">
+                            <div class="flex justify-between flex-wrap">
+                                <div class="post-info-items mb-2 lg:mb-0">
                                     <div class="post-info-item inline-block ml-4">
                                         <i class="text-gray-500 far fa-clock align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">26/8/2019</span>
                                     </div>
                                     <div class="post-info-item inline-block ml-4">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-comment align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">61</span>
                                     </div>
                                     <div class="post-info-item inline-block">
-                                        <i class="text-gray-500 far fa-clock align-middle"></i>
+                                        <i class="text-gray-500 far fa-eye align-middle"></i>
                                         <span class="text-gray-500 align-middle mr-1 font-araby-bold">551</span>
                                     </div>
 
                                 </div>
                                 <a href="#"
-                                    class="tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500 ">اقرأ
+                                    class="hidden lg:block flex-shrink-0 tag-gray bg-transparent border-2 border-gray-500 inline-block px-6 py-1 rounded-t-full rounded-l-full text-gray-500">اقرأ
                                     أكثر</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a href="#"
+                    class="lg:flex block items-center text-center border-b-2 border-t-2 border-gray-500 py-1 justify-center mb-4"><span></span><span>عرض
+                        المزيد</span></a>
             </div>
             <div class="lg:w-2/6 px-4 lg:px-0 mt-4 md:mt-0 lg:mt-0 mb-4 ">
                 <div class="sidebar-widget bg-black bg-no-repeat bg-center bg-cover rounded-lg p-6 text-white"
@@ -430,7 +439,7 @@
                     </div>
                     <div class="flex items-center justify-between my-4">
                         <a href="#" class="w-5/12 h-12 bg-no-repeat bg-center bg-cover rounded-card"
-                            style="background: url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
+                            style="background: center / cover url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
                         </a>
                         <div class="text-sm px-2">
                             <a href="#" class="text-white text-lg leading-none">
@@ -446,7 +455,7 @@
 
                     <div class="flex items-center justify-between my-4">
                         <a href="#" class="w-5/12 h-12 bg-no-repeat bg-center bg-cover rounded-card"
-                            style="background: url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
+                            style="background: center / cover url('https://gamecloud.r.worldssl.net/wp-content/uploads/2015/06/horizon-zero-dawn-e3-banner.jpg');">
                         </a>
                         <div class="text-sm px-2">
                             <a href="#" class="text-white text-lg leading-none">
@@ -776,7 +785,7 @@
         </div>
 
 
-        <div class="container lg:flex text-center items-center lg:justify-between  mx-auto mt-16 mb-4">
+        <div class="container lg:flex lg:justify-between  mx-auto mt-16 mb-4">
             <p class="text-red-600">
                 ترو جيمنج | جميع الحقوق محفوظة © 2019.
             </p>
@@ -796,5 +805,4 @@
     <script src="js/siema.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
