@@ -4,11 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build src/style.css -o dist/style.css"
+    "del:js": "rimraf tailwind.config.js",
+    "create:js": "./node_modules/.bin/tailwind init tailwind.config.js",
+    "dev:css": "./node_modules/.bin/tailwind build src/style.css -c tailwind.config.js -o dist/css/style.css",
+    "build:css": "postcss src/style.css -o dist/css/style.min.css"
   },
-  "author": "",
+  "author": "ITQAN Labs",
   "license": "MIT",
   "dependencies": {
-    "tailwindcss": "^1.1.2"
+    "autoprefixer": "",
+    "postcss-cli": "",
+    "rimraf": ""
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "",
+    "cssnano": "",
+    "tailwindcss": ""
   }
 }
